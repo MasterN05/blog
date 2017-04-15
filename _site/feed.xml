@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MasterN05</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 15 Apr 2017 17:18:19 +0800</pubDate>
+    <lastBuildDate>Sat, 15 Apr 2017 17:18:19 +0800</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>欢迎来到我的静态Blog</title>
+        <description>
+今天，我在github上弄了一个静态的博客，希望用这个博客来记录我从一个菜鸟开发者，慢慢成长为优秀开发者的过程。
+</description>
+        <pubDate>Sat, 15 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/15/the-first-page/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/15/the-first-page/</guid>
+        
+        
+        <category>HelloWord</category>
+        
+      </item>
+    
+  </channel>
+</rss>
