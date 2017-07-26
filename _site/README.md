@@ -15,14 +15,14 @@ Runing on Github + Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/ga
 
 我的个人网站地址: [MasterN05's Personal Website](http://MasterN05.github.io/)
 
-该网站使用的是[Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)
+该网站使用的是[Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io) 主题
 
 
 ## Important Update
 
 | Time        | update |  
 | :--------:  | :----- |
-| 2016.04.15  | set up this website,using theme kunka         |  
+| 2017.04.15  | set up this website,using theme kunka         |  
 
 
 

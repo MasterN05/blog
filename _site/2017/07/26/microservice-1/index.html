@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>欢迎来到我的静态Blog</title>
-    <meta name="description" content="今天，我在github上弄了一个静态的博客，希望用这个博客来记录我从一个菜鸟开发者，慢慢成长为优秀开发者的过程。">
+    <title>初探微服务架构之（一）</title>
+    <meta name="description" content="本文对微服务架构和单体架构的特点进行了说明。">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="http://localhost:4000/2017/04/15/the-first-page/">
+    <link rel="canonical" href="http://localhost:4000/2017/07/26/microservice-1/">
     <link rel="alternate" type="application/rss+xml" title="MasterN05" href="http://localhost:4000/feed.xml ">
 
 
@@ -111,15 +111,14 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>欢迎来到我的静态Blog</h1>
+        <h1>初探微服务架构之（一）</h1>
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2017-04-15
+                <i class="fa fa-calendar"></i>2017-07-26
             </div>
 
             <div class="label-card">
-                <i class="fa fa-user"></i>MasterN05
                 
             </div>
 
@@ -136,7 +135,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#HelloWord" title="Category: HelloWord" rel="category">HelloWord</a>
+        <a href="/category/#分布式" title="Category: 分布式" rel="category">分布式</a>
     
   
 
@@ -153,6 +152,9 @@
   <i class="fa fa-tags"></i>
   
     
+        <!--a href="/tag/#springcloud" title="Tag: springcloud" rel="tag">springcloud</a-->
+        <a href="/tag/#springcloud" title="Tag: springcloud" rel="tag">springcloud</a>
+    
   
 
 </span>
@@ -162,8 +164,95 @@
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        
-<p>今天，我在github上弄了一个静态的博客，希望用这个博客来记录我从一个菜鸟开发者，慢慢成长为优秀开发者的过程。</p>
+        <ul id="markdown-toc">
+  <li><a href="#单体架构与微服务对比" id="markdown-toc-单体架构与微服务对比">单体架构与微服务对比</a>    <ul>
+      <li><a href="#什么是单体架构" id="markdown-toc-什么是单体架构">什么是单体架构</a></li>
+      <li><a href="#单体架构存在的缺点" id="markdown-toc-单体架构存在的缺点">单体架构存在的缺点</a></li>
+      <li><a href="#什么是微服务" id="markdown-toc-什么是微服务">什么是微服务</a></li>
+      <li><a href="#微服务具备的特性" id="markdown-toc-微服务具备的特性">微服务具备的特性</a></li>
+      <li><a href="#微服务的优点" id="markdown-toc-微服务的优点">微服务的优点</a></li>
+      <li><a href="#微服务带来的挑战" id="markdown-toc-微服务带来的挑战">微服务带来的挑战</a></li>
+      <li><a href="#微服务设计原则" id="markdown-toc-微服务设计原则">微服务设计原则</a></li>
+      <li><a href="#微服务的开发框架" id="markdown-toc-微服务的开发框架">微服务的开发框架</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>本文对微服务架构和单体架构的特点进行了说明。</p>
+
+<h2 id="单体架构与微服务对比">单体架构与微服务对比</h2>
+
+<h3 id="什么是单体架构">什么是单体架构</h3>
+
+<ul>
+  <li>一个归档包包含了应用所有功能的应用程序， 我们通常称之为单体应用。</li>
+  <li>架构单体应用的架构风格， 我们称之为单体架构， 这是一种比较传统的架构风格。</li>
+</ul>
+
+<h3 id="单体架构存在的缺点">单体架构存在的缺点</h3>
+
+<ul>
+  <li>复杂性逐渐变高</li>
+  <li>技术债务逐渐上升</li>
+  <li>部署速度逐渐变慢</li>
+  <li>阻碍技术创新</li>
+  <li>无法按需伸缩</li>
+</ul>
+
+<h3 id="什么是微服务">什么是微服务</h3>
+
+<ul>
+  <li>Martin Fowler：简而言之，微服务架构风格这种开发方法，是以开发一组小型服务的方式来开发一个独立的应用系统的。其中每个小型服务都运行在自己的进程中，并经常采用HTTP资源API这样轻量的机制来相互通信。这些服务围绕业务功能进行构建，并能通过全自动的部署机制来进行独立部署。这些微服务可以使用不同的语言来编写，并且可以使用不同的数据存储技术。对这些微服务我们仅做最低限度的集中管理。</li>
+  <li>可参照<a href="https://www.martinfowler.com/articles/microservices.html">Microservices</a></li>
+</ul>
+
+<h3 id="微服务具备的特性">微服务具备的特性</h3>
+<ul>
+  <li>每个微服务可独立运行在自己的进程里；</li>
+  <li>一系列独立运行的微服务共同构建起了整个系统；</li>
+  <li>每个服务为独立的业务开发，一个微服务一般完成某个特定的功能，比如：订单管理、用户管理等；</li>
+  <li>微服务之间通过一些轻量的通信机制进行通信，例如通过REST API或者RPC的方式进行调用。</li>
+</ul>
+
+<h3 id="微服务的优点">微服务的优点</h3>
+<ul>
+  <li>易于开发和维护</li>
+  <li>启动较快</li>
+  <li>局部修改容易部署</li>
+  <li>技术栈不受限</li>
+  <li>按需伸缩</li>
+  <li>DevOps</li>
+</ul>
+
+<h3 id="微服务带来的挑战">微服务带来的挑战</h3>
+<ul>
+  <li>运维要求较高</li>
+  <li>分布式的复杂性</li>
+  <li>接口调整成本高</li>
+  <li>重复劳动</li>
+</ul>
+
+<h3 id="微服务设计原则">微服务设计原则</h3>
+<ul>
+  <li>单一职责原则</li>
+  <li>服务自治原则</li>
+  <li>轻量级通信原则</li>
+  <li>接口明确原则</li>
+</ul>
+
+<h3 id="微服务的开发框架">微服务的开发框架</h3>
+<ul>
+  <li><a href="http://projects.spring.io/spring-cloud">Spring Cloud</a></li>
+  <li><a href="http://dubbo.io">Dubbo</a></li>
+  <li><a href="http://www.dropwizard.io">Dropwizard</a></li>
+  <li>Consl、etcd &amp;etc.</li>
+</ul>
+
+<hr />
+
+<blockquote>
+  <p>作者<a href="http://MasterN05.github.io/">@MasterN05</a>更多文章：<a href="http://MasterN05.github.io/">个人网站</a> <code class="highlighter-rouge">|</code> <a href="http://blog.csdn.net/Agogwalker/">CSDN</a></p>
+</blockquote>
 
         </article>
         <hr>
@@ -172,19 +261,17 @@
         
             
             
-                
-            
         
         
 
         <div class="post-recent">
     <div class="pre">
         
+        <p><strong>上一篇</strong> <a href="/2017/04/15/the-first-page/">欢迎来到我的静态Blog</a></p>
+        
     </div>
     <div class="nex">
 
-        
-        <p><strong>下一篇</strong> <a href="/2017/07/26/microservice-1/">初探微服务架构之（一）</a></p>
         
     </div>
 </div>
@@ -202,8 +289,8 @@
      */
 
     var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/2017/04/15/the-first-page/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/2017/04/15/the-first-page/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://localhost:4000/2017/07/26/microservice-1/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/07/26/microservice-1/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE
